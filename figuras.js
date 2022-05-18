@@ -1,70 +1,83 @@
 // Codigo del cuadrado
-console.group("Cuadrados")
 
-const ladoCuadrado = 5;
-console.log("Los lados del cuadrado miden: " + ladoCuadrado +"cm" );
+/* El usuario nos dara el lado del Cuadrado:
+ladoC
+*/
 
-const perimetroCuadrado = ladoCuadrado * 4;
-console.log("El perimetro del cuadrado es: " + perimetroCuadrado +"cm" );
+console.group("Cuadrados"); 
 
-const areaCuadrado = ladoCuadrado * ladoCuadrado;
-console.log("El area del cuadrado es: " + areaCuadrado +"cm^2" );
+//perimetro cuadrado
+function perimetroCuadrado(ladoC){
+    return ladoC * 4;
+};
+console.log(perimetroCuadrado() ); // Un parametro
 
-console.groupEnd("Cuadrados")
+//area cuadrado
+function areaCuadrado(ladoC){
+    return ladoC * ladoC;
+};
+console.log(areaCuadrado() ); // Un parametro
+
+
+console.groupEnd("Cuadrados"); 
 
 
 // Codigo del triangulo
-console.group("Triangulos")
 
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const baseTriangulo = 4;
+/*El usuario nos proporcionara los Dos lados, la base del triangulo y altura:
+ladoT1
+ladoT2
+baseT
+alturaT
 
+*/
+console.group("Triangulos"); 
 
-console.log(
-    "Los lados del triángulo miden: " 
-    + ladoTriangulo1 + "cm, " 
-    + ladoTriangulo2 + "cm, " 
-    + baseTriangulo + "cm, " 
-);
+//Perimetro triangulo
+function perimetroTriangulo (ladoT1,ladoT2, baseT){
+    return ladoT1 + ladoT2 + baseT;
+};
+console.log(perimetroTriangulo() ); // Tres parametros
 
-const alturaTriangulo = 5.5;
-console.log("La altura del triánguloes: " + alturaTriangulo +"cm" );
-
-const perimetroTriangulo = 
-ladoTriangulo1 + ladoTriangulo2 + baseTriangulo ;
-console.log("Este es el perímetro del triángulo: " + perimetroTriangulo +"cm" );
-
-const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
-console.log("Esta es el área del triángulo: " + areaTriangulo +"cm^2" )
-
+//area triangulo
+function areaTriangulo (baseT, alturaT){
+    return (baseT * alturaT) / 2;
+};
+console.log(areaTriangulo() ); // Dos parametros
 
 console.groupEnd("Triangulos"); 
 
 
 // Codigo del círculo
+/* El usuario nos proporcionara el radio:
+radioC
+*/
+
 console.group("Círculos");
 
-
-//Radio
-const radioCirculo = 4;
-console.log("El rádio del circiulo es : " + radioCirculo + "cm" );
-
 //Diámetro
-const diametroCirculo = radioCirculo * 2;
-console.log("El diámetro del circiulo es : " + diametroCirculo + "cm" );
+function diametroCirculo(radio){
+    return radio * 2;
+};
+console.log(diametroCirculo() ); // Un parametro
 
 //Pi
 const PI = Math.PI;
 console.log("Pi es : " + PI + "cm" );
 
 //Circunferencia
-const perimetroCirculo = diametroCirculo * PI;
-console.log("El perímetro del circiulo es : " + perimetroCirculo + "cm" );
+function perimetroCirculo(radio){
+    const diametro = diametroCirculo(radio);
+    return diametro * PI;
+}; 
+console.log(perimetroCirculo() ); // Un parametro
 
 //Área
-const areaCirculo = ( radioCirculo * radioCirculo) * PI ;
-console.log("El área del circiulo es : " + areaCirculo + "cm^2" );
+
+function areaCirculo(radio){
+    return ( radio * radio) * PI;
+}; 
+console.log(areaCirculo() ); // Un parametro
 
 
 console.groupEnd("Círculos"); 

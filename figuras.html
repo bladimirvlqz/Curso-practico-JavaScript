@@ -5,11 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geométricas | Curso Práctico de JavaScript Platzy</title>
+    <link rel="stylesheet" href="./css/font/flaticon.css">
+    <link rel="stylesheet" href="./figuras.css">
 </head>
 <body>
-    <h1>Figuras Geométricas</h1>
+    <header>
+        <section>
+            <div class="title">
+                <h1>
+                    Figuras Geométricas  
+                </h1>
+                <p>
+                    Primer taller#1 del curso práctico de JavaScript
+                </p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="content">
+            <div class="item-content">
+                <h2>Calcúla el área y perímetro de un cuadrado</h2>
 
+                <form class="form-content" >
+                    <div class="label-content">
+                        <label for="ImputCuadrado">
+                            Escribe cuánto mide el lado de tu cuadrado
+                        </label>
+                        <input id="ImputCuadrado" type="number" placeholder="Lado">
+                    </div>
+                    <div class="button-content">
+                        <button type="button" onclick="calcularPerimetroCuadrado()">
+                            calcular el Perímetro
+                        </button>
+                        <button type="button" onclick="calcularAreaCuadrado()">
+                            calcular el Área
+                        </button>
+                    </div>
+                </form>
+            </div>   
+            
+            <div class="item-content">
+                <h2>Calcúla el área y perímetro de un Triángulo</h2>
 
+                <form class="form-content">
+                    <div class="label-content">
+                        <label for="imput-lado-1">
+                            Escribe cuánto mide el lado "A" de tu Triángulo
+                        </label>
+                        <input id="imput-lado-1" type="number" placeholder="Lado A">
+                    </div>
+                    <div class="label-content">
+                        <label for="imput-lado-2">
+                            Escribe cuánto mide el lado "B" de tu Triángulo
+                        </label>
+                        <input id="imput-lado-2" type="number" placeholder="Lado B">
+                    </div>
+                    <div class="label-content">
+                        <label for="imput-base">
+                            Escribe cuánto mide la Base de tu Triángulo
+                        </label>
+                        <input id="imput-base" type="number" placeholder="Base">
+                    </div>
+                    <div class="label-content">
+                        <label for="imput-altura">
+                            Escribe cuánto mide la Base de tu Triángulo
+                        </label>
+                        <input id="imput-altura" type="number" placeholder="Altura">
+                    </div>
+                    <div class="button-content">
+                        <button type="button" onclick="calcularPerimetroTriangulo()">
+                            calcular el Perímetro
+                        </button>
+                        <button type="button" onclick="calcularAreaTriangulo()">
+                            calcular el Área
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="item-content">
+                <h2>Calcúla el área y perímetro de un Círculo</h2>
+
+                <form class="form-content">
+                    <div class="label-content">
+                        <label for="Imput-radio">
+                            Escribe cuánto mide el radio de tu -radio
+                        </label>
+                        <input id="Imput-radio" type="number" placeholder="Radio">
+                    </div>
+                    <div class="button-content">
+                        <button type="button" onclick="calcularDiametroCirculo()">
+                            calcular el Diametro
+                        </button>
+                        <button type="button" onclick="calcularPerimetroCirculo()">
+                            calcular el Perímetro
+                        </button>
+                        <button type="button" onclick="calcularAreaCirculo()">
+                            calcular el Área
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    
     <script src="./figuras.js"></script>
 </body>
 </html>

@@ -83,6 +83,36 @@ console.log(areaCirculo() ); // Un parametro
 console.groupEnd("Círculos"); 
 
 
+// Aqui interactuamos con el html
 
+//Cuadrado
+function calcularPerimetroCuadrado(){
+    const input =document.getElementById("ImputCuadrado");
+    const value =input.value;
 
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+};
+    
+function calcularAreaCuadrado(){
+    const input =document.getElementById("ImputCuadrado");
+    const value =input.value;
 
+    const perimetro = areaCuadrado(value);
+    alert(perimetro);
+};
+
+// triangulo
+
+function calcularPerimetroTriangulo() {
+    const input1 = document.getElementById("imput-lado-1");
+    const lado1 =input1.value;
+    const input2 = document.getElementById("imput-lado-2");
+    const lado2 =input2.value;
+    const inputBase= document.getElementById("imput-base");
+    const base =inputBase.value;
+    
+
+    const perimetro = perimetroTriangulo(lado1, lado2, base);
+    alert(perimetro);
+};

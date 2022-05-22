@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geométricas | Curso Práctico de JavaScript Platzy</title>
-    <link rel="stylesheet" href="./css/font/flaticon.css">
     <link rel="stylesheet" href="./figuras.css">
 </head>
 <body>
@@ -28,10 +27,12 @@
 
                 <form class="form-content" >
                     <div class="label-content">
-                        <label for="ImputCuadrado">
-                            Escribe cuánto mide el lado de tu cuadrado
-                        </label>
-                        <input id="ImputCuadrado" type="number" placeholder="Lado">
+                        <div class="labels">
+                            <label for="ImputCuadrado">
+                                Escribe cuánto mide el lado de tu cuadrado
+                            </label>
+                            <input id="ImputCuadrado" type="number" placeholder="Lado">
+                        </div>
                     </div>
                     <div class="button-content">
                         <button type="button" onclick="calcularPerimetroCuadrado()">
@@ -49,28 +50,30 @@
 
                 <form class="form-content">
                     <div class="label-content">
-                        <label for="imput-lado-1">
-                            Escribe cuánto mide el lado "A" de tu Triángulo
-                        </label>
-                        <input id="imput-lado-1" type="number" placeholder="Lado A">
-                    </div>
-                    <div class="label-content">
-                        <label for="imput-lado-2">
-                            Escribe cuánto mide el lado "B" de tu Triángulo
-                        </label>
-                        <input id="imput-lado-2" type="number" placeholder="Lado B">
-                    </div>
-                    <div class="label-content">
-                        <label for="imput-base">
-                            Escribe cuánto mide la Base de tu Triángulo
-                        </label>
-                        <input id="imput-base" type="number" placeholder="Base">
-                    </div>
-                    <div class="label-content">
-                        <label for="imput-altura">
-                            Escribe cuánto mide la Base de tu Triángulo
-                        </label>
-                        <input id="imput-altura" type="number" placeholder="Altura">
+                        <div class="labels">
+                            <label for="imput-lado-1">
+                                Escribe cuánto mide el lado "A" de tu Triángulo
+                            </label>
+                            <input id="imput-lado-1" type="number" placeholder="Lado A">
+                        </div>
+                        <div class="labels">
+                            <label for="imput-lado-2">
+                                Escribe cuánto mide el lado "B" de tu Triángulo
+                            </label>
+                            <input id="imput-lado-2" type="number" placeholder="Lado B">
+                        </div>
+                        <div class="labels">
+                            <label for="imput-base">
+                                Escribe cuánto mide la Base de tu Triángulo
+                            </label>
+                            <input id="imput-base" type="number" placeholder="Base">
+                        </div>
+                        <div class="labels">
+                            <label for="imput-altura">
+                                Escribe cuánto mide la altura de tu Triángulo
+                            </label>
+                            <input id="imput-altura" type="number" placeholder="Altura">
+                        </div>
                     </div>
                     <div class="button-content">
                         <button type="button" onclick="calcularPerimetroTriangulo()">
@@ -88,10 +91,12 @@
 
                 <form class="form-content">
                     <div class="label-content">
-                        <label for="Imput-radio">
-                            Escribe cuánto mide el radio de tu -radio
-                        </label>
-                        <input id="Imput-radio" type="number" placeholder="Radio">
+                        <div class="labels">
+                            <label for="Imput-radio">
+                                Escribe cuánto mide el radio de tu -radio
+                            </label>
+                            <input id="Imput-radio" type="number" placeholder="Radio">
+                        </div>
                     </div>
                     <div class="button-content">
                         <button type="button" onclick="calcularDiametroCirculo()">

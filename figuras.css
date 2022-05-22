@@ -5,8 +5,8 @@
 }
 
 html{
-    font-family: 'Roboto Mono', monospace;
-    
+    font-family: 'Roboto ', monospace;
+    background-color: var(--hueso);
 }
 
 :root {
@@ -16,6 +16,7 @@ html{
     --xlg: 40px;
     --cemento: #84ad5e ;
     --perla: #EAE6CA;
+    --hueso: #fffce3;
 }
 
 header{
@@ -29,7 +30,7 @@ header{
     text-align: center;
 }
 .title h1 {
-    font-size: var(--xlg);
+    font-size: var(--xlg) ;
     font-weight: bold;
     color: rgb(58, 56, 56);
 }
@@ -48,6 +49,31 @@ header{
     justify-items: center;
     gap: 50px;
     height: auto;
-    margin-top: 50px;
+    margin: 50px 50px;
+
 }
 
+.item-content{
+    background-color: var(--perla);
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px -6px rgb(63, 63, 63);
+}
+
+.item-content h2{
+    margin-bottom: 30px;
+}
+
+.form-content{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 16px;
+    background-color: var(--hueso);
+    padding: 10px;
+    border-radius: 8px;
+}
+.label-content{
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+}
